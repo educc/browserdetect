@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Browser Detect</title>
+</head>
+<body>
+	<div>
+		<h3 id="containter-text"></h3>
+	</div>
+
+	<script src="js/browser-detect.min.js"></script>
+	<script type="text/javascript">
+		var el = document.getElementById("containter-text");
+		var result = browser();
+		el.innerHTML = JSON.stringify(result);
+	</script>
+</body>
+</html>
